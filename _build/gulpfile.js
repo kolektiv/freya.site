@@ -2,7 +2,7 @@ var gulp = require('gulp'),
     $ = require('gulp-load-plugins')();
 
 gulp.task('css', function () {
-  $.rubySass('../_sass/main.scss')
+  $.rubySass('../_src/sass/main.scss')
     .pipe($.autoprefixer({
       browsers: ['> 1%']
     }))
@@ -17,7 +17,7 @@ gulp.task('site', function () {
 });
 
 gulp.task('watch', function () {
-  gulp.watch(['../_sass/**/*.*'], ['css']);
+  gulp.watch(['../_src/sass/**/*.*'], ['css']);
   gulp.watch(['../_site/**/*.html'], ['site']);
 });
 
