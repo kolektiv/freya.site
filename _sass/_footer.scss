@@ -1,0 +1,22 @@
+footer {
+    @include zero;
+
+    // Layout
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    // Visual
+
+    padding: 60px 0;
+
+    // Para
+    
+    p {
+        color: $c-d2;
+        
+        text-align: center;
+        width: 600px;
+    }
+}

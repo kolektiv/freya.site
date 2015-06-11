@@ -1,0 +1,97 @@
+body > header {
+    
+    // Layout
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    // Sizing
+
+    @include zero;
+    height: 70px;
+    width: 100%;
+    
+    // Visuals
+    
+    background-color: $c-d2;
+    
+    // Links
+    
+    a {
+        text-decoration: none;
+        text-transform: lowercase;
+
+        &:hover {
+            color: $c-h1;
+        }
+    }
+}
+
+body > header > h1 {
+
+    // Layout
+
+    width: 240px;
+
+    // Sizing
+    
+    @include zero;
+
+    // Visuals
+
+    font-size: 16px;
+
+    // Link
+    
+    a {
+        color: $c-l3;
+        font-weight: $f-w-l;
+
+        &:hover {
+            color: $c-l1;
+        }
+    }
+}
+
+body > header > nav {
+    
+    // Layout
+        
+    display: flex;
+    justify-content: flex-end;
+    
+    // Sizing
+    
+    @include zero;
+    width: 660px;
+
+    // List
+    
+    ul {
+        
+        // Layout
+        
+        display: flex;
+        align-items: center;
+        
+        // Sizing
+        
+        @include zero;
+        
+        // Visuals
+        
+        list-style: none;
+        
+        // Item
+        
+        li {
+            @include zero;
+            padding-left: 60px;
+            
+            a {
+                color: $c-l1;
+            }
+        }
+    }
+}

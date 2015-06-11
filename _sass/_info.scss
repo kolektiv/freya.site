@@ -1,0 +1,68 @@
+main > section {
+
+    // Layout
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    // Sections
+    
+    section {
+
+        // Layout
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        // Sizing
+
+        padding: 60px 0;
+        width: 900px;
+
+        // Display
+
+        border-bottom: 1px solid $c-l1;
+        
+        // Titles
+        
+        h1 {
+            @include zero;
+            
+            color: $c-l3;
+
+            text-transform: lowercase;
+            
+            font-size: 36px;
+            font-weight: $f-w-t;
+            margin-bottom: 30px;
+        }
+
+        h1 + a {
+            @include zero;
+
+            padding: 20px 40px;
+
+            text-decoration: none;
+            text-transform: lowercase;
+
+            font-size: 16px;
+            font-weight: $f-w-l;
+            
+            background-color: $c-d2;
+            color: $c-l2;
+
+            &:hover {
+                background-color: $c-h1;
+            }
+        }
+
+        p {
+            @include zero;
+
+            text-align: center;
+            width: 600px;
+        }
+    }
+}

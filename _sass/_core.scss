@@ -1,0 +1,48 @@
+body {
+    @include zero;
+
+    // Layout
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    // Visual
+
+    background-color: $c-b1;
+
+    font-family: $f-b;
+    font-size: 16px;
+    font-weight: $f-w-l;
+}
+
+main {
+    @include zero;
+    
+    // Layout
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    // Sizing
+
+    width: 100%;
+}
+
+p {
+    a {
+        border-bottom: 1px solid $c-l1;
+        
+        color: $c-d1;
+        text-decoration: none;
+
+        &:hover {
+            border-bottom: 1px solid $c-d1;
+        }
+    }
+}
+
+strong {
+    font-weight: $f-w-h;
+}

@@ -1,0 +1,39 @@
+main > header {
+
+    // Layout
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    // Sizing
+
+    padding: 60px 0;
+    width: 100%;
+    
+    // Visuals
+    
+    background-color: $c-b2;
+    border-bottom: 1px solid $c-l1;
+    text-transform: lowercase;
+
+    // Title
+    
+    h1 {
+        @include zero;
+
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+
+        background-image: url("/img/logo.png");
+        background-repeat: no-repeat;
+        color: $c-l3;
+
+        width: 397px;
+        height: 330px;
+        
+        font-size: 72px;
+        font-weight: $f-w-t;
+    }
+}
