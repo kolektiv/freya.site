@@ -1,0 +1,2 @@
+# freya.site
+freya.io
